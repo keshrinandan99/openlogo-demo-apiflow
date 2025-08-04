@@ -60,6 +60,7 @@ class Auth401,Auth403,Params400 error
 ```
 
 ### API FLOW 3
+```mermaid
 ---
 config:
   theme: neo-dark
@@ -86,3 +87,4 @@ class Start,Success200 startEnd
 class InputValid,SaveSuccess decision
 class Success200 success
 class Input400,Save500 error
+```
