@@ -1,34 +1,7 @@
 ### API FLOW 1
-```mermaid
-flowchart TD
-%% API Flow: PUT /messages/:messageId
-Start[PUT /messages/:messageId] --> Auth{Authenticated?}
-Auth -->|No| Auth401[Return 401 Unauthorized]
-Auth -->|Yes| ExtractId[Extract messageId from URL]
-ExtractId --> ValidateBody[Validate Request Body]
-ValidateBody --> InputValid{Input Valid?}
-InputValid -->|No| Input400[Return 400 Bad Request]
-InputValid -->|Yes| FindMessage[Find Message by ID]
-FindMessage --> MessageExists{Message Exists?}
-MessageExists -->|No| Message404[Return 404 Not Found]
-MessageExists -->|Yes| CheckAuth[Check User Authorization]
-CheckAuth --> Authorized{Authorized?}
-Authorized -->|No| Auth403[Return 403 Forbidden]
-Authorized -->|Yes| UpdateMessage[Update Message Reply]
-UpdateMessage --> UpdateSuccess{Update Successful?}
-UpdateSuccess -->|No| Update500[Return 500 Internal Error]
-UpdateSuccess -->|Yes| Success200[Return 200 OK]
-
-classDef startEnd fill:#81C8FF,stroke:#4682B4,stroke-width:2px,color:#000;
-classDef decision fill:#FFD54F,stroke:#FFB300,stroke-width:2px,color:#000;
-classDef success fill:#A5D6A7,stroke:#388E3C,stroke-width:2px,color:#000;
-classDef error fill:#EF9A9A,stroke:#D32F2F,stroke-width:2px,color:#000;
-
-class Start,Success200 startEnd
-class Auth,InputValid,MessageExists,Authorized,UpdateSuccess decision
-class Success200 success
-class Auth401,Input400,Message404,Auth403,Update500 error
-```
+<detail>
+<img src="https://doimages.nyc3.cdn.digitaloceanspaces.com/002Blog/0-BLOG-BANNERS/app_platform.png" width="400">
+</detail>
 
 ### API FLOW 2
 ```mermaid
