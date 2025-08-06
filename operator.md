@@ -1,5 +1,6 @@
 ### API FLOW 1
 <detail>
+  <summary>Api Flow Diagram </summary>
 ```mermaid
 flowchart TD
 %% API Flow: PUT /messages/:messageId
