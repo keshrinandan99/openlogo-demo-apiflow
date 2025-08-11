@@ -1,5 +1,5 @@
 ### API FLOW 1
-<detail>
+<details>
   <summary>Api Flow Diagram </summary>
 ```mermaid
 flowchart TD
@@ -31,7 +31,7 @@ class Auth,InputValid,MessageExists,Authorized,UpdateSuccess decision
 class Success200 success
 class Auth401,Input400,Message404,Auth403,Update500 error
 ```
-</detail>
+</details>
 ### API FLOW 2
 ```mermaid
 flowchart TD
