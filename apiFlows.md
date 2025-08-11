@@ -562,7 +562,7 @@ class Input400,Save500 error
 ```
 
 </details>
-
+</details>
 
 <details>
 <summary>BUSINESS API</summary>
