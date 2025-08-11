@@ -315,7 +315,7 @@ class FindLogo,ProcessUpdate,UpdateMetadata,BuildResponse process
 > **Response:** `401 Unauthorized` - Not authenticated</br>
 > **Response:** `403 Forbidden` - Not authorized
 > </details>
-<detials>
+<details>
 <summary> Api flow diagram</summary>
 
 ```mermaid
@@ -730,7 +730,7 @@ class Success200 success
 > **Response:** `200 OK` - Logos retrieved successfully</br>
 > **Response:** `400 Bad Request` - Invalid input parameters
 > </details>
-<detials>
+<details>
 <summary>Api Flow diagram</summary>
 
 ```mermaid
