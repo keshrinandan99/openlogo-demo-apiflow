@@ -62,33 +62,31 @@ class GetUsers,GetKeys,GetRequests,GetHits,BuildStats process
 | URL | Method | Auth Required | Description |
 |-----|--------|---------------|-------------|
 | `/catalog/permission/:userId/roles/:role` | PUT | True | Assign or modify user roles |
+ <details>
+ <summary>Request body</summary>
 
-> <details>
-> <summary>Request body</summary>
->
-> ```json
-> {
->   "email": "email@user.com"
-> }
-> ```
->
-> </details>
-> <details>
-> <summary>Response body</summary>
->
-> ```json
-> {
->   "statusCode": 200
-> }
-> ```
->
-> **Response:** `200 OK` - Role updated successfully</br>
-> **Response:** `400 Bad Request` - Invalid role</br>
-> **Response:** `401 Unauthorized` - Not authenticated</br>
-> **Response:** `403 Forbidden` - Not authorized</br>
-> **Response:** `404 Not Found` - User not found
-> </details>
+ ```json
+ {
+   "email": "email@user.com"
+ }
+ ```
 
+ </details>
+ <details>
+ <summary>Response body</summary>
+
+ ```json
+ {
+   "statusCode": 200
+ }
+ ```
+
+ **Response:** `200 OK` - Role updated successfully</br>
+ **Response:** `400 Bad Request` - Invalid role</br>
+ **Response:** `401 Unauthorized` - Not authenticated</br>
+ **Response:** `403 Forbidden` - Not authorized</br>
+ **Response:** `404 Not Found` - User not found
+ </details>
 <details>
 <summary>Api flow diagram </summary>
 
