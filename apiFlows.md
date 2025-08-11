@@ -538,12 +538,7 @@ class Auth401,Auth403,Params400 error
 <summary>Api Flow diagram </summary>
 
 ```mermaid
----
-config:
-  theme: neo-dark
-  look: classic
-  layout: dagre
----
+
 flowchart TD
 %% API Flow: POST /messages/contact-us
 Start[POST /messages/contact-us] --> ExtractBody[Extract Request Body]
@@ -602,12 +597,7 @@ class Input400,Save500 error
 <summary>Api Flow diagram</summary>
 
 ```mermaid
----
-config:
-  theme: neo-dark
-  look: classic
-  layout: dagre
----
+
 flowchart TD
 %% API Flow: GET /logo
 Start[GET /logo] --> ExtractQuery[Extract Query Parameters]
