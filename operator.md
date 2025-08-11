@@ -1,6 +1,7 @@
 ### API FLOW 1
 <details>
   <summary>Api Flow Diagram 1 </summary>
+  
 ```mermaid
 flowchart TD
 %% API Flow: PUT /messages/:messageId
@@ -35,6 +36,7 @@ class Auth401,Input400,Message404,Auth403,Update500 error
 ### API FLOW 2
 <details>
 <summary>apiFlow 2</summary>
+  
 ```mermaid
 flowchart TD
 %% API Flow: GET /messages
