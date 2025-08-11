@@ -1,6 +1,6 @@
 ### API FLOW 1
 <details>
-  <summary>Api Flow Diagram </summary>
+  <summary>Api Flow Diagram 1 </summary>
 ```mermaid
 flowchart TD
 %% API Flow: PUT /messages/:messageId
@@ -33,6 +33,8 @@ class Auth401,Input400,Message404,Auth403,Update500 error
 ```
 </details>
 ### API FLOW 2
+<details>
+<summary>apiFlow 2</summary>
 ```mermaid
 flowchart TD
 %% API Flow: GET /messages
@@ -60,8 +62,12 @@ class Auth,Authorized,ParamsValid decision
 class Success200 success
 class Auth401,Auth403,Params400 error
 ```
+</details>
 
 ### API FLOW 3
+<details>
+<summary>apiflow3</summary>  
+
 ```mermaid
 ---
 config:
@@ -90,3 +96,4 @@ class InputValid,SaveSuccess decision
 class Success200 success
 class Input400,Save500 error
 ```
+</details>
