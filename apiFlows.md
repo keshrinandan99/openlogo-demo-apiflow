@@ -125,6 +125,7 @@ class Auth401,Forbidden403,BadRequest400,NotFound404,UpdateError500 error
 class ExtractUserId,FindUser,UpdateRole process
 ```
 </details>
+
 ---
 | URL | Method | Auth Required | Description |
 |-----|--------|---------------|-------------|
